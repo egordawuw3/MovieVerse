@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MovieVerse</h1>
+            <div class="controls-container">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Поиск фильмов...">
+                    <button id="searchButton">Поиск</button>
+                </div>
+                <div class="sort-container">
+                    <select id="sortSelect">
+                        <option value="popularity">По популярности</option>
+                        <option value="rating">По рейтингу</option>
+                        <option value="date">По дате выхода</option>
+                    </select>
+                    <button id="sortOrderButton">↓</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="movies-grid" id="moviesContainer"></div>
+        <div class="pagination">
+            <button id="prevPage">Назад</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Вперед</button>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
